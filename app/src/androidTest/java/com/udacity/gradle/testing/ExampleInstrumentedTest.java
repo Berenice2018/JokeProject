@@ -7,7 +7,6 @@ package com.udacity.gradle.testing;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
-import android.test.AndroidTestCase;
 
 import com.udacity.gradle.builditbigger.EndpointsAsyncTask;
 
@@ -19,7 +18,6 @@ import java.util.concurrent.CountDownLatch;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
-
 
 
 

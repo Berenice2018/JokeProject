@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="artifacts:jokeact">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jokeact-release.aar/ef0e76e262ac991f3ee08f69b0cbe96b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jokeact-release.aar/ef0e76e262ac991f3ee08f69b0cbe96b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jokeact-release.aar/6828bd0994b5f8cbcc869748bba6d694/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jokeact-release.aar/6828bd0994b5f8cbcc869748bba6d694/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
