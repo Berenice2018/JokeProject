@@ -5,11 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 public class JokeActivity extends AppCompatActivity {
 
     private final static String TAG = "JokeActivity";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +21,11 @@ public class JokeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_joke);
 
         String joke = getIntent().getStringExtra("Joke");
-        //Log.d(TAG, "##### extra = "+joke);
 
         TextView jokeview = findViewById(R.id.joke_textview);
         jokeview.setText(joke);
+
     }
+
+
 }

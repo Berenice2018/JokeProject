@@ -31,10 +31,9 @@ public class MyEndpoint {
 
 
     @ApiMethod(name = "sayHi")
-    public MyBean sayHi(){
+    public MyBean sayHi(@Named("position") int position){
         MyBean response = new MyBean();
-        MyJoke myJoke = MyJoke.getMyJokeInstance();
-        String jokeString = myJoke.getMyJokeString();
+        String jokeString = MyJoke.getMyJokeInstance().getMyJokeString(position);
 
         response.setData(jokeString);
         return response;
