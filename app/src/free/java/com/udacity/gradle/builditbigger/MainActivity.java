@@ -14,10 +14,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
-import java.util.List;
-
 import de.avkterwey.jokeact.JokeActivity;
-import de.avkterwey.jokelib.MyJoke;
 
 import static com.udacity.gradle.builditbigger.MyConstants.EXTRA_JOKE;
 import static de.avkterwey.jokelib.MyJoke.*;

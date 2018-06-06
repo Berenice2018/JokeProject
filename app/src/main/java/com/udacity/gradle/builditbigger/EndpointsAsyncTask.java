@@ -49,7 +49,7 @@ public class EndpointsAsyncTask extends AsyncTask<Integer, Void, String> {
         int jokePosition = params[0];
 
         try {
-            return myApiService.sayHi(jokePosition).execute().getData();
+            return myApiService.getJoke(jokePosition).execute().getData();
         } catch (IOException e) {
             return e.getMessage();
         }

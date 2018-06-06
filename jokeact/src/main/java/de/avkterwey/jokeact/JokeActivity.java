@@ -14,7 +14,7 @@ import com.google.android.gms.ads.MobileAds;
 public class JokeActivity extends AppCompatActivity {
 
     private final static String TAG = "JokeActivity";
-    public static final String EXTRA_KEY_JOKE ="joke";
+    public static final String EXTRA_KEY_JOKE ="Joke";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class JokeActivity extends AppCompatActivity {
             TextView jokeview = findViewById(R.id.joke_textview);
             jokeview.setText(joke);
         }
-        
+
     }
 
 }
