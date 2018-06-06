@@ -29,7 +29,7 @@ public class ExampleInstrumentedTest {
     public void testVerifyJoke() throws InterruptedException {
         assertTrue(true);
         final CountDownLatch latch = new CountDownLatch(1);
-        Context context = InstrumentationRegistry.getContext();
+        //Context context = InstrumentationRegistry.getContext();
         EndpointsAsyncTask testTask = new EndpointsAsyncTask() {
             @Override
             protected void onPostExecute(String result) {
@@ -40,7 +40,7 @@ public class ExampleInstrumentedTest {
                 }
             }
         };
-        testTask.execute(context);
+        testTask.execute(1);
         latch.await();
     }
 }
