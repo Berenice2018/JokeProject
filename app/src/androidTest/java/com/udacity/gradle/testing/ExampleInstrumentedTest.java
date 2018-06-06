@@ -24,7 +24,7 @@ import static junit.framework.Assert.assertTrue;
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
 
-
+    // Async task successfully retrieves a non-empty string
     @Test
     public void testVerifyJoke() throws InterruptedException {
         assertTrue(true);
