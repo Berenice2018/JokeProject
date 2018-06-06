@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:jokeact">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jokeact-release.aar/7185ffa465e47cf6fbf34c22cadc6a82/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jokeact-release.aar/7185ffa465e47cf6fbf34c22cadc6a82/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
