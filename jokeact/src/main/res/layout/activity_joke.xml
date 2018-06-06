@@ -4,15 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="de.avkterwey.jokeact.JokeActivity">
+    tools:context="de.avkterwey.jokeact.JokeActivity"
+    android:background="@drawable/gradient">
 
     <TextView
         android:id="@+id/joke_textview"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="@dimen/joke_margin"
+
         android:textSize="@dimen/joke_text_size"
         android:textColor="@color/colorAccent"
+        android:fontFamily="@font/semicoder"
+        android:lineSpacingMultiplier="1.4"
         android:text="Hello World!"
         />
 

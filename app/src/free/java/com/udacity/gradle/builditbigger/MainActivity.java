@@ -14,10 +14,13 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
+import java.util.List;
+
 import de.avkterwey.jokeact.JokeActivity;
 import de.avkterwey.jokelib.MyJoke;
 
 import static com.udacity.gradle.builditbigger.MyConstants.EXTRA_JOKE;
+import static de.avkterwey.jokelib.MyJoke.*;
 
 
 public class MainActivity extends AppCompatActivity implements IAsyncResponse {
@@ -35,13 +38,11 @@ public class MainActivity extends AppCompatActivity implements IAsyncResponse {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mNumberOfJokes = MyJoke.getMyJokeInstance().getJokeListSize();
+        mNumberOfJokes = getMyJokeInstance().getJokeListSize();
         mProgressbar = findViewById(R.id.progressBar);
         mProgressbar.setVisibility(View.INVISIBLE);
 
-
         MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
-
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
@@ -107,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements IAsyncResponse {
 
         if(mCounter < (mNumberOfJokes-1)){
             mCounter++;
+            Log.e(TAG, getMyJokeInstance().getMyJokeString(mCounter));
             getJokeFromBackend();
         }
         else{
