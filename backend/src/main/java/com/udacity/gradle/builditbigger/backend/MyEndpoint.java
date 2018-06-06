@@ -21,8 +21,8 @@ import de.avkterwey.jokelib.MyJoke;
 public class MyEndpoint {
 
     /** A simple endpoint method that takes a name and says Hi back */
-    /*@ApiMethod(name = "sayHi")
-    public MyBean sayHi(@Named("name") String name) {
+    /*@ApiMethod(name = "getJoke")
+    public MyBean getJoke(@Named("name") String name) {
         MyBean response = new MyBean();
         response.setData("Hi, " + name);
 
@@ -30,8 +30,8 @@ public class MyEndpoint {
     }*/
 
 
-    @ApiMethod(name = "sayHi")
-    public MyBean sayHi(@Named("position") int position){
+    @ApiMethod(name = "getJoke")
+    public MyBean getJoke(@Named("position") int position){
         MyBean response = new MyBean();
         String jokeString = MyJoke.getMyJokeInstance().getMyJokeString(position);
 
